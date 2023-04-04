@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>premiação vendas</title>
+</head>
+
+    <script>
+        function premiacao (){
+            var vendasStr = document.getElementById("vendas").value;
+            var vendas = Number(vendasStr);
+
+            if (vendas <= 10000 ){
+                alert ("Você é Bronze!");
+
+            } else if (vendas >=10001 && vendas <=50000 ){
+                alert ("Você é Prata!");
+                
+            } else if (vendas >= 100001 && vendas <= 500000){
+                alert("Você é Ouro!");
+
+            } else{
+                alert ("Você é Platinum!");
+            }
+        }
+    </script>
+
+<body>
+</body>
+<label for="fname">Digite o valor da sua venda: </label>
+<input type="text" id="vendas">
+<button onclick="premiacao();">Confira sua premiação!</button>
+</html>

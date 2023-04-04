@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida Senha</title>
+</head>
+
+
+<script>
+    function valida (){
+        var senhaStr = document.getElementById("senha").value;
+        var senha = Number(senhaStr);
+    
+if (senha === 1234){
+    alert ("Acesso Permitido!")
+
+    } else {
+        alert ("Acesso Negado!")
+    }
+
+}
+    
+</script>
+
+<body>
+</body>
+
+<label for="senha">Digite a senha:</label>
+<input type="password" id="senha">
+<button onclick="valida();">ok</button>
+
+</html>

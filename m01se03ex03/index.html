@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function confira() {
+        var pesoStr = document.getElementById("peso").value;
+        var peso = Number (pesoStr);
+        var comprimentoStr = document.getElementById("comprimento").value;
+        var comprimento = Number(comprimentoStr);
+
+        if (peso <= 1500 && comprimento <= 5) {
+            alert("Pode Passar!");
+        } else {
+            alert("Não pode passar!");
+        }
+    }
+
+</script>
+
+<body>
+    <label for="fname">Digite o peso: </label>
+    <input type="text" id="peso">
+    <label for="fname">Digite o comprimento: </label>
+    <input type="text" id="comprimento" name="comprimento">
+   
+    <button onclick="confira();">Confira se seu veículo pode passar.</button>
+</body>
+</html>

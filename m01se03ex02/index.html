@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faixa etária</title>
+</head>
+
+<script>
+    function confira() {
+            var numStr = document.getElementById("numero").value;
+            var idade = Number(numStr);
+
+            if (idade <= 12) {
+                alert("Criança");
+            } else if (idade > 12 && idade <=17) {
+                alert("Adolescente");
+            } else if (idade > 18 && idade <= 65) {
+                alert("Adulto");
+            } else if (idade > 66 && idade <= 110) {
+                alert("Senior");
+            } else {
+                alert ("Invalido");
+            }
+        }
+
+</script>
+<body>
+    <input type="text" id="numero">
+    <button onclick="confira();">Verifica</button>
+</body>
+</html>
